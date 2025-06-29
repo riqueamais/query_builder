@@ -48,7 +48,7 @@ query_builder/
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/riqueamais/query_builder.git
    cd query_builder
    ```
 2. Install dependencies:
