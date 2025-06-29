@@ -5,6 +5,7 @@ const modulesRouter = Router();
 const modulesController = new ModulesController();
 
 modulesRouter.get("/", modulesController.index);
+modulesRouter.get("/:id", modulesController.indexById);
 modulesRouter.post("/:id", modulesController.create);
 modulesRouter.put("/:id", modulesController.update);
 modulesRouter.delete("/:id", modulesController.remove);

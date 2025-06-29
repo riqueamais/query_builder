@@ -8,6 +8,16 @@ class ModulesController {
     res.status(200).json({ modules });
   }
 
+  async indexById(req: Request, res: Response) {
+    const { id } = req.params;
+
+    const module = await knex("course_modules")
+      .select()
+      .where({ course_id: id });
+
+    res.json(module);
+  }
+
   async create(req: Request, res: Response) {
     const { id } = req.params;
     const { name } = req.body;
